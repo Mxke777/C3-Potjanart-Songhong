@@ -1,0 +1,6 @@
+a = int(input("number#"))
+b = int(input("number#"))
+print("Result (+)",a + b)
+print("Result (-)",a - b)
+print("Result (*)",a * b)
+print("Result (/)",a / b)
