@@ -7,7 +7,7 @@ class CurrencyConverterGUI:
         self.window = tk.Tk()
         self.window.title("แปลงสกุลเงิน")
         self.window.geometry("560x620")
-        #ตารางรับค่า-แปลงค่าอุณหภูมิ
+        #ตารางรับค่า-แปลงค่าเงิน
         self.dollar_label = tk.Label(self.window, text="ดอลลาร์สหรัฐ(USD)")
         self.dollar_label.grid(row=0, column=0)
         self.thaibaht_label = tk.Label(self.window, text="บาท(THB)")
@@ -35,7 +35,7 @@ class CurrencyConverterGUI:
     def convert(self):
         dollar = 34.15
         dollar = float(self.dollar_entry.get())
-        #แปลงค่าองศาเซลเซียสเป็นองศาฟาเรนไฮต์
+        #แปลงค่าเงินดอลลาร์เป็นเงินไทย
         thaibaht = dollar * 34.15
         self.thaibaht_entry.delete(0, tk.END)
         self.thaibaht_entry.insert(0, thaibaht)
